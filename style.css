@@ -1,0 +1,147 @@
+:root {
+  --gradient: linear-gradient(to right, #9572FC, #43E7AD, #E2D45C);
+  --purple-300: #9A35FF;
+  --blue-300: #2871FF;
+  --pink-300: #FA41FE;
+  --red-300: #F40000;
+  --black-300: #121214;
+  --gray-100: #A1A1AA;
+  --gray-300: #2A2634;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-size: 62.5%; /* 10px = 1rem */
+}
+
+/* BODY */
+body {
+  background-image: url(images/background.jpg);
+  background-position: top center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: var(--black-300);
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 3.2rem;
+}
+
+header img {
+  width: 12rem;
+  height: 12rem;
+
+  padding: 0.4rem;
+  border-radius: 50%;
+  background: #fff;
+  background-image: var(--gradient);
+}
+
+/* MAIN - CARDS */
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+  gap: 2.4rem;
+
+  margin-top: 3.2rem;
+}
+
+/* MAIN - SECTIONS */
+section div {
+  min-width: 58rem;
+  padding: 3.2rem;
+  padding-top: 2.4rem;
+  background-color: var(--gray-300);
+  border-radius: 0.7rem;
+}
+
+section {
+  font: 300 1.6rem 'Inter', sans-serif;
+  background-image: var(--gradient);
+  padding-top: 0.4rem;
+  border-radius: 1rem;
+}
+
+section h2 {
+  color: white;
+  font-weight: 900;
+  font-size: 2.4rem;
+}
+
+section p {
+  color: var(--gray-100);
+  font-size: 1.4rem;
+  margin-bottom: 2.4rem;
+  margin-top: 0.3rem;
+}
+
+section:last-child {
+  margin-bottom: 3.2rem;
+}
+
+/* SECTIONS - MY GAMES */
+.games ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+.games ul li img {
+  width: 9rem;
+  height: 12rem;
+  border-radius: 0.8rem;
+}
+
+.games img {
+  transition: all .2s ease-in-out;
+}
+
+.games img:hover {
+  transform: scale(1.1);
+}
+
+/* SECTIONS - MY CHANNELS */
+.channels ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+.channels ul li img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  border: 0.1rem solid var(--gray-100);
+}
+
+.channels img {
+  transition: all .2s ease-in-out;
+}
+
+.channels img:hover {
+  transform: scale(1.1);
+}
+
+/* SECTIONS - MY LINKS*/
+.links ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+
+.links svg {
+  transition: all .2s ease-in-out;
+}
+
+.links svg:hover {
+  transform: scale(1.2);
+}
