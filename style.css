@@ -90,6 +90,10 @@ section:last-child {
   margin-bottom: 3.2rem;
 }
 
+section ul {
+  list-style: none;
+}
+
 /* SECTIONS - MY GAMES */
 .games ul {
   display: flex;
